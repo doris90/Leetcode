@@ -32,6 +32,8 @@ public class Sum4 {
 
             for (int z = i+1; z < nums.length-2; z++) {
 
+                if(z>i+1 && nums[z] == nums[z-1]) continue;
+
                 int tgt = target - (nums[i] + nums[z]);
 
                 int j = z+1;
@@ -46,9 +48,10 @@ public class Sum4 {
 
                         List<Integer> list = Arrays.asList(nums[i], nums[z], nums[j], nums[k]);
 
-                        if(! isContains(list, res)) {
+//                        if(! isContains(list, res)) {
                             res.add(Arrays.asList(nums[i], nums[z], nums[j], nums[k]));
-                        }
+                        System.out.println(nums[i]+";" +nums[z]+ ";" +nums[j]+ ";" +nums[k]);
+//                        }
 
 
                         j++;

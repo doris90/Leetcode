@@ -97,11 +97,11 @@ public class AddTwoNumbers {
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
 
         ListNode l10 = new ListNode(1);
-//        ListNode l11 = new ListNode(4);
-//        ListNode l12 = new ListNode(3);
+        ListNode l11 = new ListNode(4);
+        ListNode l12 = new ListNode(3);
 
-//        l10.next = l11;
-//        l11.next = l12;
+        l10.next = l11;
+        l11.next = l12;
 
         ListNode l20 = new ListNode(9);
         ListNode l21 = new ListNode(9);
